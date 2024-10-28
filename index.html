@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container-title">
+            <h2>Lista de tareas</h2>
+        </div>
+        <div class="container"> 
+            <div class="inputcol">  
+                <input type="text" name="text" class="input" id="input" placeholder="Escribe tarea a agregar">
+                <button type="button" class="buttoninput" id="buttoninput" onclick="clickButtonAdd()">Agregar</button>
+            </div>        
+        </div>
+        <div id="count" class="count">
+            <p>Total:<span id="totalItems">0</span></p>
+            <p>Realizadas:<span id="totalComplete">0</span></p>
+            <p>Pendientes:<span id="totalIncomplete">0</span></p>
+        </div>
+        <div id="todolist" class="todoList">
+            <ul class="listHeader">
+                <li class="listHeader-item">Id</li>
+                <li class="listHeader-item">Tarea</li>
+            </ul>
+
+        </div>
+    </main>
+      
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>  
+
